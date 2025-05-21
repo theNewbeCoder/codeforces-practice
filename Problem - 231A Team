@@ -1,0 +1,21 @@
+Problem Link- https://codeforces.com/problemset/problem/231/A
+
+#include <stdio.h>
+
+int main() {
+    int n,i,f1,f2,f3,countp=0;
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %d %d",&f1,&f2,&f3);
+
+        if(f1==1 && f2==1 || f1==1 && f3==1|| f2==1 && f1==1 || f2==1 && f3==1 )
+        {
+            countp++;
+        }
+    }
+
+    printf("%d",countp);
+    return 0;
+}
